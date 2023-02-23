@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nejer Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="mx-16 mt-8">
+        <h1 class="text-center font-bold text-2xl mb-8 underline">Welcome to <span class="text-sky-800">Nejer Bank!!</span></h1>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+            <div class="bg-orange-300 text-center p-2 rounded-md">
+                <h1 class="font-bold text-lg">Deposit Amount</h1>
+                <h1 class="font-bold">Tk. <span id="totalDeposit">00</span></h1>
+            </div>
+
+            <div class="bg-red-300 text-center p-2 rounded-md ">
+                <h1 class="font-bold text-lg">Withdraw Amount</h1>
+                <h1 class="font-bold">Tk. <span id="totalWithdraw">00</span></h1>
+            </div>
+            <div class="bg-green-300 text-center p-2 rounded-md md:col-span-2 lg:col-span-1 ">
+                <h1 class="font-bold text-lg">Total Amount</h1>
+                <h1 class="font-bold">Tk. <span id="totalBalance">00</span></h1>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-8 w-full">
+
+            <div class="bg-orange-400 text-center p-2 rounded-md">
+                <h1 class="font-bold text-lg mb-2">Deposit Amount</h1>
+                <input id="deposit-input-field" class="p-2 text-center font-bold rounded-md " type="text"
+                    placeholder="Enter Amount"><br>
+                <button id="btn-deposit" class="btn btn-success mt-4 mb-2 text-white">Deposit</button>
+            </div>
+
+            <div class="bg-red-400 text-center p-2 rounded-md">
+                <h1 class="font-bold text-lg mb-2">Withdraw Amount</h1>
+                <input id="withdraw-input-field" class="p-2 text-center font-bold rounded-md " type="text"
+                    placeholder="Enter Amount"><br>
+                <button id="btn-withdraw" class="btn  bg-red-600 mt-4 mb-2 text-white">Withdraw</button>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="javaScript.js"></script>
+    <script src="jsWithFunction.js"></script>
+</body>
+
+</html>
